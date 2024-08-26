@@ -1,0 +1,189 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto',sans-serif;
+    background-color: var(--color-secondary-charcoalgrey);
+}
+*{
+    /* border: solid red 1px; */
+}
+:root{
+    --color-primary:hsl(4, 100%, 67%);
+    
+    --color-secondary-slategrey:hsl(234, 29%, 20%);
+    --color-secondary-charcoalgrey:hsl(235, 18%, 26%);
+    --color-secondary-grey:hsl(231, 7%, 60%);
+    --color-secondary-white:hsl(0, 0%, 100%);
+
+    --font-size :1rem;
+    --font-400: 400;
+    --font-700: 700;
+
+}
+.landmarks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    border-radius: 1rem;
+    background-color: var(--color-secondary-white);
+    display: flex;
+    padding: 1rem;
+    gap: 2rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.text{
+    padding: 2rem;
+    width: 24rem;
+}
+.text h1{
+    color: var(--color-secondary-slategrey);
+    font-size: 3.5rem;
+    margin-bottom: 0;
+}
+.text p{
+    font-size: var(--font-size);
+    color: var(--color-secondary-charcoalgrey);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form div{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.form p{
+    margin: 0.5rem;
+    font-size: var(--font-size);
+    min-width: fit-content;
+}
+form{
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+form div{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+form label{
+    font-size: 0.8rem;
+    font-family: 'roboto',sans-serif;
+    font-weight: var(--font-700);
+    color: var(--color-secondary-slategrey);
+}
+form input{
+    border: solid hsl(231, 7%, 60%) 0.1px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: var(--font-size);
+}
+form div span{
+    color: var(--color-primary);
+}
+button{
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem;
+    border: solid hsl(231, 7%, 60%) 0.1px;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    font-size:var(--font-size);
+    font-family: 'roboto',sans-serif;
+    background-color: var(--color-secondary-slategrey);
+    color: var(--color-secondary-white);
+    font-weight: var(--font-700);
+    cursor: pointer;
+}
+button:hover{
+    background-image: linear-gradient(to right, rgb(240, 37, 81) , rgb(248, 158, 41));
+}
+/* img section */
+.img{
+    display: flex;
+}
+.img img{
+    width: 22rem;
+    margin: 0;
+}
+.block{
+    display: none;
+}
+.hidden{
+    display: none;
+}
+/* success card */
+.success-card{
+    width: 20rem;
+    padding: 1rem;
+}
+.success-card img{
+    width: 3rem;
+}
+.success-card h1{
+    font-variant: var(--font-700);
+    font-size: 2.5rem;
+    color: var(--color-secondary-slategrey);
+}
+.success-card p{
+    font-size: var(--font-size);
+    color: var(--color-secondary-charcoalgrey);
+}
+.card-hidden{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .container{
+        flex-direction: column-reverse;
+        gap: 0rem;
+    }
+    .hidden{
+        display: none;
+    }
+    .block{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .block img{
+        width: 100%;
+        gap: 0rem;
+        border-radius: 2rem;
+        -webkit-border-radius: 2rem;
+        -moz-border-radius: 2rem;
+        -ms-border-radius: 2rem;
+        -o-border-radius: 2rem;
+}
+    .text{
+        padding: 2rem;
+    }
+    .text h1{
+        font-size: 2.5rem;
+    }
+    .text p{
+        font-size: 0.9rem;
+    }
+    .img-desktop{
+        display: none;
+    }
+}  
