@@ -7,8 +7,10 @@ const btnEnd = document.getElementById('btn-dismiss');
 const inputEmail = document.getElementById('email');
 const errorMessage = document.getElementById('error-message');
 const form = document.getElementById('form');
+const emailSuccess = document.getElementById('span-success')
 const defaultEmail = 'email@company.com';
 
+console.log(emailSuccess);
     inputEmail.addEventListener('focus', function() {
         
 
@@ -44,6 +46,7 @@ const defaultEmail = 'email@company.com';
             imgHidden.classList.add('hidden');
             textHidden.classList.add('hidden');
             successCard.classList.remove('card-hidden');
+            emailSuccess.textContent = inputEmail.value;
         }
     })
 
